@@ -34,3 +34,23 @@ body {
     border-radius: 364px;
     border: 100px solid #FFFCFC;
 }
+
+.pawprints {
+    position: absolute;
+    width: 691px;
+    height: 736px;
+    left: 808px;
+    top: 213px;
+}
+
+.homepagedog {
+    position: absolute;
+    width: 558px;
+    height: 845px;
+    left: 915px;
+    top: 256px;
+}
+
+.homepageinfo {
+    color: black;
+}
