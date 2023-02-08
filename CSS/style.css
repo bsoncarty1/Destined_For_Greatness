@@ -1,32 +1,34 @@
-.navigation-bar .logo {
+.navigation-bar {
     position: absolute;
     width: 82.83px;
     height: 75px;
-    left: 111px;
+    left: 200px;
     top: 41px;
-    background: #222424;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
 }
 
 #D4gLogo {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: 111px;
+    left: 25px;
     top: 41px;
+    background: #222424;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 body {
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     width: 1600px;
-    height: 950px;
-    background: linear-gradient(128.74deg, #6DF2DA 18.38%, #31C6AB 136.12%);
+    height: 100vh;
+    background-color: #6DF2DA;
 }
 
 .ellipse {
     box-sizing: border-box;
-    position: absolute;
+    position: relative;
     width: 783px;
     height: 728px;
     left: 785px;
@@ -35,22 +37,27 @@ body {
     border: 100px solid #FFFCFC;
 }
 
-.pawprints {
+.homepageinfo {
+    color: black;
+    position: absolute;
+    width: 617.17px;
+    height: 151px;
+    left: 98px;
+    top: 355px;
+}
+
+#prints{
     position: absolute;
     width: 691px;
     height: 736px;
-    left: 808px;
-    top: 213px;
+    left: 785px;
+    top: 185px;
 }
 
-.homepagedog {
+#homepagedog{
     position: absolute;
-    width: 558px;
-    height: 845px;
-    left: 915px;
-    top: 256px;
-}
-
-.homepageinfo {
-    color: black;
+    width: 600px;
+    height: 700px;
+    left: 785px;
+    top: 125px;
 }
