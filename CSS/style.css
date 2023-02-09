@@ -121,6 +121,7 @@ body {
     top: 450px;
     position: fixed;
 }
+
 #breedsPrints{
     position: fixed;
     width: 691px;
@@ -131,20 +132,31 @@ body {
     border-radius: 290px;
 }
 
-form{
+form {
     position: relative;
-    top: 300px;
+    width: 1000px;
+    height: 500px;
+    top: 200px;
     left: 400px;
-
 }
 
-label{
+label {
     display: inline-block;
-    width: 700px;
+    width: 500px;
+    font-size: 30px;
     text-align: left;
+    color: black;
 }
 
 input {
-    display: inline-block;
-    padding-left: 200px;
+    background-color: white;
+    width: 250px;
+    border: none;
+    padding: 10px;
+    color: black;
+}
+
+#dogbreed, #weight, #age {
+    margin-bottom: 30px;
+
 }
