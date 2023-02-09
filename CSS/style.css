@@ -88,7 +88,7 @@ body {
     font-weight: bolder;
 }
 
-.pawprints{
+#prints{
     position: absolute;
     width: 691px;
     height: 720px;
@@ -122,8 +122,11 @@ body {
     position: fixed;
 }
 #breedsPrints{
-    left: 550px;
-    top: 450px;
-    position: fixed;
-    border-radius: 400px;
+    position: absolute;
+    width: 691px;
+    height: 720px;
+    left: 595px;
+    top: 455px;
+    opacity: 0.1;
+    border-radius: 290px;
 }
