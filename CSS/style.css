@@ -1,16 +1,40 @@
 .navigation-bar {
     position: absolute;
-    width: 82.83px;
-    height: 75px;
     left: 200px;
-    top: 41px;
+    top: 35px;
+}
+
+ul {
+    list-style: none;
+}
+
+#Nav {
+    margin: 1rem;
+    font-family: Arial;
+}
+
+#Nav li {
+    width: 500px;
+    margin-left: 50px;
+}
+
+#Nav a {
+    float: left;
+    padding: 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#Nav a:hover {
+    color: gray;
 }
 
 #D4gLogo {
     position: absolute;
     width: 48px;
     height: 48px;
-    left: 25px;
+    left: 100px;
     top: 41px;
     background: #222424;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -40,24 +64,29 @@ body {
 .homepageinfo {
     color: black;
     position: absolute;
-    width: 617.17px;
+    width: 400px;
     height: 151px;
-    left: 98px;
+    left: 100px;
     top: 355px;
+    font-size: 24px;
+    font-family: Serif;
+    font-weight: bolder;
 }
 
 #prints{
     position: absolute;
     width: 691px;
-    height: 736px;
-    left: 785px;
-    top: 185px;
+    height: 720px;
+    left: 830px;
+    top: 182px;
+    opacity: 0.1;
+    border-radius: 290px;
 }
 
 #homepagedog{
-    position: absolute;
-    width: 600px;
-    height: 700px;
-    left: 785px;
-    top: 125px;
+    position: fixed;
+    width: 650px;
+    height: 750px;
+    left: 825px;
+    top: 280px;
 }
