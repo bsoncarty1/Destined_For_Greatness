@@ -88,7 +88,7 @@ body {
     font-weight: bolder;
 }
 
-#prints{
+.pawprints{
     position: absolute;
     width: 691px;
     height: 720px;
@@ -110,8 +110,20 @@ body {
 
 #groupOfDogs{
     position: fixed;
-    width: 650px;
-    height: 750px;
-    left: 825px;
-    top: 280px;
+    width: 600px;
+    height: 600px;
+    left: 625px;
+    top: 450px;
+}
+
+#breedsEllipse{
+    left: 550px;
+    top: 450px;
+    position: fixed;
+}
+#breedsPrints{
+    left: 550px;
+    top: 450px;
+    position: fixed;
+    border-radius: 400px;
 }
