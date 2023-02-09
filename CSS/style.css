@@ -4,6 +4,21 @@
     top: 35px;
 }
 
+.Title {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    left: 175px;
+    top: 18px;
+    position: absolute;
+}
+
+.Title h3 {
+    font-family: Arial;
+    text-shadow: 2px 2px darkgray;
+}
+
 ul {
     list-style: none;
 }
@@ -83,7 +98,7 @@ body {
     border-radius: 290px;
 }
 
-#homepagedog{
+#dog{
     position: fixed;
     width: 650px;
     height: 750px;
