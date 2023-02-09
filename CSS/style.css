@@ -105,3 +105,13 @@ body {
     left: 825px;
     top: 280px;
 }
+
+/*****************************************BREEDS PAGE*******************************************************/
+
+#groupOfDogs{
+    position: fixed;
+    width: 650px;
+    height: 750px;
+    left: 825px;
+    top: 280px;
+}
