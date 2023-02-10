@@ -111,9 +111,9 @@ body {
 #groupOfDogs{
     position: fixed;
     width: 600px;
-    height: 600px;
+    height: auto;
     left: 625px;
-    top: 450px;
+    top: 550px;
 }
 
 #breedsEllipse{
@@ -158,5 +158,72 @@ input {
 
 #dogbreed, #weight, #age {
     margin-bottom: 30px;
+}
 
+/********************************************GROOMING PAGE*************************************************************/
+
+#groomingellipse {
+    left: 785px;
+    top: 400px;
+    position: fixed;
+}
+
+#groomingprints {
+    position: fixed;
+    width: 691px;
+    height: 720px;
+    left: 810px;
+    top: 400px;
+    opacity: 0.1;
+    border-radius: 290px;
+}
+
+#groomingdog {
+    position: fixed;
+    height: 800px;
+    width: auto;
+    left: 950px;
+    top: 330px;
+}
+
+.GroomingTips {
+    color: black;
+    left: 980px;
+    top: 410px;
+    position: fixed;
+    font-size: 30px;
+}
+
+/******************************************EXERCISE PAGE**************************************************************/
+
+#exerciseellipse {
+    position: fixed;
+    left: 785px;
+    top: 400px;
+}
+
+#exerciseprints {
+    position: fixed;
+    width: 691px;
+    height: 720px;
+    left: 810px;
+    top: 400px;
+    opacity: 0.1;
+    border-radius: 290px;
+}
+
+#buckydog {
+    position: fixed;
+    height: 550px;
+    width: auto;
+    left: 750px;
+    top: 480px;
+}
+
+.ExerciseTips {
+    color: black;
+    left: 980px;
+    top: 410px;
+    position: fixed;
+    font-size: 30px;
 }
