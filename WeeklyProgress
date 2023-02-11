@@ -17,7 +17,7 @@
 
 2/10/23 - 2/11/23
 -Research on how to make/connect MySQL database to website
--Downloaded XAAMP
+-Downloaded XAAMP/PHPStorm
 -Split workload into 2 segments
 -Segment one: database to store user login/password
 -Segment two: JS program that compares user input dog to ideal dog
