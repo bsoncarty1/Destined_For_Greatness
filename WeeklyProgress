@@ -19,6 +19,8 @@
 -Research on how to make/connect MySQL database to website
 -Downloaded XAAMP/PHPStorm/Docker
 -Split workload into 2 segments
--Segment one: database to store user login/password
--Segment two: JS program that compares user input dog to ideal dog
+-Segment one: database to store user 
+login/password (Nick)
+-Segment two: JS program that compares user input 
+dog to ideal dog (Dillon)
 -(Ideal dog stored in JS program. Not in databse)
