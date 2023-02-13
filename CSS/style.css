@@ -227,3 +227,40 @@ input {
     position: fixed;
     font-size: 30px;
 }
+
+/*******************************************ABOUT PAGE****************************************************************/
+
+#PictureofHannah {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    left: 400px;
+    top: 250px;
+    border-radius: 300px;
+}
+
+#TitleHannah {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 700px;
+    top: 350px;
+}
+
+#PictureofBrandon {
+    height: 375px;
+    width: auto;
+    position: absolute;
+    border-radius: 200px;
+    left: 360px;
+    top: 725px;
+}
+
+#TitleBrandon {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 750px;
+    top: 870px;
+}
+
