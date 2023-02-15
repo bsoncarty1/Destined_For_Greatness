@@ -280,3 +280,20 @@ input {
     left: 630px;
     top: 1220px;
 }
+
+#PictureofNicholas {
+    height: 400px;
+    width: auto;
+    position: absolute;
+    border-radius: 200px;
+    left: 375px;
+    top: 1640px;
+}
+
+#TitleNicholas {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 730px;
+    top: 1720px;
+}
