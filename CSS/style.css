@@ -323,7 +323,7 @@ input {
     left: 625px;
 }
 
-input[type=text], input[type=password] {
+#username, #password {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
