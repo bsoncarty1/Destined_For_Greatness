@@ -24,3 +24,34 @@ login/password (Nick)
 -Segment two: JS program that compares user input 
 dog to ideal dog (Dillon)
 -(Ideal dog stored in JS program. Not in databse)
+
+2/17/23-2/23/23
+-Redivided work to:
+*Dillon writes algorithm and fills dog databse
+*Nick creates all databases and linkes them, as well as implements login/register feture. 
+
+-Nick created and linked database to fake repo
+-implemented coded files into D4G repo
+-New files:
+*register.php: 
+The form's action attribute is set to register.php. This means that when the form submit button is clicked, 
+all the data in the form will be submitted to the same page (register.php). The part of the code that 
+receives this form data is written in the server.php file and is included at the top of the register.php 
+file. Also including the errors.php file to display form errors. 
+
+*server.php:
+Sessions are used to track logged in users and so we include a session_start() at the top of the file.
+The if statement determines if the reg_user button on the registration form is clicked.
+The submit button has a name attribute set to reg_user and that is what we are referencing in the if statement.
+All the data is received from the form and checked to make sure that the user correctly filled the form. 
+Passwords are also compared to make sure they match.
+If no errors were encountered, the user is registered in the users table in the database with a hashed password.
+When a user is registered in the database, they are immediately logged in and redirected to the index.php page.
+
+*login.php:
+Similar to the register.php page.
+
+*new index.php:
+The first if statement checks if the user is already logged in. If they are not logged in, they will be redirected 
+to the login page. Hence this page is accessible to only logged in users. 
+The second if statement checks if the user has clicked the logout button. If yes, the system logs them out and redirects them back to the login page.
