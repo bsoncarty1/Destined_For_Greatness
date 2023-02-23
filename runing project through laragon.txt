@@ -1,0 +1,7 @@
+1. Download laragon full version
+https://laragon.org/
+2. copy paste D4G folder into www root folder or configure it to D4G folder
+3. click start all
+4. click databse, open Laragon.MySQL, under file click laod sql file, choose "registrationDB" found in D4G folder.
+5. file encoding is ok
+5. click web to run local host

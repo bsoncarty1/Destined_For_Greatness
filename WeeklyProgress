@@ -56,4 +56,5 @@ The first if statement checks if the user is already logged in. If they are not 
 to the login page. Hence this page is accessible to only logged in users. 
 The second if statement checks if the user has clicked the logout button. If yes, the system logs them out and redirects them back to the login page.
 
+-Added instructions for linking registration database (runing project through laragon.txt)
 -Changed html files into php and linked them as such
