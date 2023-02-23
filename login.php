@@ -2,9 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registration system PHP and MySQL</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Login</title>
 </head>
+<link href="CSS/style.css" rel="stylesheet">
+<link href="CSS/normalize.css" rel="stylesheet">
 <body>
 <div class="header">
     <h2>Login</h2>
