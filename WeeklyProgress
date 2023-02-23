@@ -55,3 +55,5 @@ Similar to the register.php page.
 The first if statement checks if the user is already logged in. If they are not logged in, they will be redirected 
 to the login page. Hence this page is accessible to only logged in users. 
 The second if statement checks if the user has clicked the logout button. If yes, the system logs them out and redirects them back to the login page.
+
+-Changed html files into php and linked them as such

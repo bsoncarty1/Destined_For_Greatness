@@ -51,7 +51,7 @@ if (isset($_GET['logout'])) {
 </div>
 <nav class="navigation-bar">
     <ul id="Nav">
-        <li><a href="Breeds.html">Breeds</a></li>
+        <li><a href="Breeds.php">Breeds</a></li>
         <li><a href="Grooming.html">Grooming</a></li>
         <li><a href="Exercise.html">Exercise</a></li>
         <li><a href="About.html">About</a></li>
