@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -37,4 +38,5 @@
     <h1>Exercise Tips!</h1>
 </div>
 </body>
-</html><?php
+</html>
+    <?php

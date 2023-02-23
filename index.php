@@ -11,8 +11,6 @@ if (isset($_GET['logout'])) {
     header("location: login.php");
 }
 ?>
-
-//CHANGES
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -52,9 +50,9 @@ if (isset($_GET['logout'])) {
 <nav class="navigation-bar">
     <ul id="Nav">
         <li><a href="Breeds.php">Breeds</a></li>
-        <li><a href="Grooming.html">Grooming</a></li>
-        <li><a href="Exercise.html">Exercise</a></li>
-        <li><a href="About.html">About</a></li>
+        <li><a href="Grooming.php">Grooming</a></li>
+        <li><a href="Exercise.php">Exercise</a></li>
+        <li><a href="About.php">About</a></li>
     </ul>
 </nav>
 <div class="ellipse"></div>

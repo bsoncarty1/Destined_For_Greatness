@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -37,4 +38,5 @@
     <h1>Grooming Tips!</h1>
 </div>
 </body>
-</html><?php
+</html>
+<?php
