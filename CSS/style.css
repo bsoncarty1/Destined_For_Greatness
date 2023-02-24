@@ -313,6 +313,7 @@ input {
     position: absolute;
     left: 730px;
     top: 2200px;
+<<<<<<< HEAD
 }
 
 /********************************************LOGIN PAGE****************************************************************/
@@ -362,3 +363,6 @@ button:hover {
 }
 
 /
+=======
+}
+>>>>>>> parent of 5425bbf... Started login page and made a home button
