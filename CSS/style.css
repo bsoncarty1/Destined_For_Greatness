@@ -336,28 +336,29 @@ select {
 /********************************************LOGIN PAGE****************************************************************/
 
 #Login {
-    border: 3px solid #f1f1f1;
     width: 500px;
-    left: 625px;
+    left: 600px;
+    top: 225px
 }
 
 #username, #password {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 150px;
     display: inline-block;
-    border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
 button {
-    background-color: black;
-    color: white;
+    background-color: #6DF2DA;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 button:hover {
@@ -374,15 +375,16 @@ button:hover {
     position: absolute;
     float: right;
     width: 300px;
-    left: 205px;
+    left: 195px;
     top: 310px;
     color: black;
 }
 
 #login-ellipse{
-    left: 452px;
-    top: -5px;
+    left: -175px;
+    top: -190px;
     width: 850px;
-    height: 872px;
-    position: fixed;
+    height: 700px;
+    position: absolute;
+    z-index: -5;
 }
