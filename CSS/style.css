@@ -211,6 +211,17 @@ select {
     font-size: 30px;
 }
 
+.groomingInfo{
+    color: black;
+    position: absolute;
+    width: 500px;
+    left: 150px;
+    top: 300px;
+    font-size: 24px;
+    font-family: Serif;
+    font-weight: bolder;
+}
+
 /******************************************EXERCISE PAGE**************************************************************/
 
 #exerciseellipse {
