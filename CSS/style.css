@@ -335,6 +335,12 @@ select {
 
 /********************************************LOGIN PAGE****************************************************************/
 
+.ellipse{
+    left: 550px;
+    top: 450px;
+    position: relative;
+}
+
 #Login {
     border: 3px solid #f1f1f1;
     width: 500px;
