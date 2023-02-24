@@ -148,7 +148,7 @@ label {
     color: black;
 }
 
-input {
+select {
     background-color: white;
     width: 250px;
     border: none;
