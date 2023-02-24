@@ -119,12 +119,12 @@ body {
     position: fixed;
     width: 600px;
     height: auto;
-    left: 625px;
+    left: 580px;
     top: 550px;
 }
 
 #breedsEllipse{
-    left: 550px;
+    left: 475px;
     top: 450px;
     position: fixed;
 }
@@ -133,8 +133,8 @@ body {
     position: fixed;
     width: 691px;
     height: 720px;
-    left: 595px;
-    top: 455px;
+    left: 510px;
+    top: 452px;
     opacity: 0.1;
     border-radius: 290px;
 }
