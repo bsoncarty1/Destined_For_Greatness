@@ -25,7 +25,7 @@ login/password (Nick)
 dog to ideal dog (Dillon)
 -(Ideal dog stored in JS program. Not in databse)
 
-2/17/23-2/23/23
+2/17/23-2/24/23
 -Redivided work to:
 *Dillon writes algorithm and fills dog databse
 *Nick creates all databases and linkes them, as well as implements login/register feture. 
@@ -58,3 +58,8 @@ The second if statement checks if the user has clicked the logout button. If yes
 
 -Added instructions for linking registration database (runing project through laragon.txt)
 -Changed html files into php and linked them as such
+
+-Brandon made changes to the login page. He added an ellipse and changed the stying of the form so that it looked more
+uniform to the rest of the site.
+-Brandon also started writing javascript that works with the dropdown menus in the Breeds page so that the site can
+display information based on what the user selects.
