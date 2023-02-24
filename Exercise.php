@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -10,17 +11,17 @@
 <link href="CSS/normalize.css" rel="stylesheet">
 <body>
 <div class="logo">
-    <a href="index.html"><img id="D4gLogo" src="Images/logoD4g.png" alt="logo"></a>
+    <a href="index.php"><img id="D4gLogo" src="Images/logoD4g.png" alt="logo"></a>
 </div>
 <div class="Title">
     <h3>DESTINED 4 GREATNESS</h3>
 </div>
 <nav class="navigation-bar">
     <ul id="Nav">
-        <li><a href="Breeds.html">Breeds</a></li>
-        <li><a href="Grooming.html">Grooming</a></li>
-        <li><a href="Exercise.html">Exercise</a></li>
-        <li><a href="About.html">About</a></li>
+        <li><a href="Breeds.php">Breeds</a></li>
+        <li><a href="Grooming.php">Grooming</a></li>
+        <li><a href="Exercise.php">Exercise</a></li>
+        <li><a href="About.php">About</a></li>
     </ul>
 </nav>
 <div class="ellipse" id="exerciseellipse"></div>
@@ -38,3 +39,4 @@
 </div>
 </body>
 </html>
+    <?php
