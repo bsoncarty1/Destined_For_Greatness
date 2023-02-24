@@ -335,12 +335,6 @@ select {
 
 /********************************************LOGIN PAGE****************************************************************/
 
-.ellipse{
-    left: 550px;
-    top: 450px;
-    position: relative;
-}
-
 #Login {
     border: 3px solid #f1f1f1;
     width: 500px;
@@ -383,4 +377,12 @@ button:hover {
     left: 205px;
     top: 310px;
     color: black;
+}
+
+#login-ellipse{
+    left: 452px;
+    top: -5px;
+    width: 850px;
+    height: 872px;
+    position: fixed;
 }
