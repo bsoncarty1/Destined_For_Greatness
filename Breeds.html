@@ -28,17 +28,35 @@
   </nav>
 
   <form>
+
     <div id="dogbreed">
       <label for="breedInfo">What breed is your dog?</label>
-      <input type="text" id="breedInfo" name="breedInfo">
+      <select name="breedInfo" id="breedInfo">
+        <option value="">--Please choose an option--</option>
+        <option value="Labrador">Labrador</option>
+        <option value="French_Bulldog">French Bulldog</option>
+        <option value="Border_Collie">Border Collie</option>
+        <option value="Golden_Retriever">Golden Retriever</option>
+      </select>
     </div>
-    <div  id="weight">
+    <div id="weight">
       <label for="dogWeight">How much does your dog weigh?</label>
-      <input type="text" id="dogWeight" name="dogWeight">
+      <select name="dogWeight" id="dogWeight">
+        <option value="">--Please choose an option--</option>
+        <option value="small">0-30 lbs</option>
+        <option value="medium">31-70 lbs</option>
+        <option value="large">71+ lbs</option>
+      </select>
     </div>
     <div id="age">
       <label for="dogAge">How old is your dog?</label>
-      <input type="text" id="dogAge" name="dogAge">
+      <select name="dogAge" id="dogAge">
+        <option value="">--Please choose an option--</option>
+        <option value="puppy">0-1 year</option>
+        <option value="young_adult">1-5 years</option>
+        <option value="adult">5-8 years</option>
+        <option value="senior">8+ years</option>
+      </select>
     </div>
   </form>
   <div class="ellipse" id="breedsEllipse"></div>
