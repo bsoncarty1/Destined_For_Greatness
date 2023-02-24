@@ -136,7 +136,7 @@ form {
     position: relative;
     width: 1000px;
     height: 500px;
-    top: 200px;
+    top: 175px;
     left: 400px;
 }
 
@@ -158,6 +158,16 @@ select {
 
 #dogbreed, #weight, #age {
     margin-bottom: 30px;
+}
+
+#submit-btn{
+    position: relative;
+    left: 692px;
+    background: #0066A2;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    text-shadow: none;
 }
 
 /********************************************GROOMING PAGE*************************************************************/
