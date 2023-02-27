@@ -58,7 +58,7 @@ ul {
     border-radius: 10px;
 }
 
-#login{
+#login {
     position: relative;
     left: 750px;
 }
@@ -95,7 +95,7 @@ body {
     font-weight: bolder;
 }
 
-#prints{
+#prints {
     position: absolute;
     width: 691px;
     height: 720px;
@@ -105,7 +105,7 @@ body {
     border-radius: 290px;
 }
 
-#dog{
+#dog {
     position: fixed;
     width: 650px;
     height: 750px;
@@ -115,7 +115,7 @@ body {
 
 /*****************************************BREEDS PAGE*******************************************************/
 
-#groupOfDogs{
+#groupOfDogs {
     position: fixed;
     width: 600px;
     height: auto;
@@ -123,13 +123,13 @@ body {
     top: 550px;
 }
 
-#breedsEllipse{
+#breedsEllipse {
     left: 475px;
     top: 450px;
     position: fixed;
 }
 
-#breedsPrints{
+#breedsPrints {
     position: fixed;
     width: 691px;
     height: 720px;
@@ -167,7 +167,7 @@ select {
     margin-bottom: 30px;
 }
 
-#submit-btn{
+#submit-btn {
     position: relative;
     left: 692px;
     background: #0066A2;
@@ -211,7 +211,7 @@ select {
     font-size: 30px;
 }
 
-.groomingInfo{
+.groomingInfo {
     color: black;
     position: absolute;
     width: 500px;
@@ -256,7 +256,7 @@ select {
     font-size: 30px;
 }
 
-.exerciseInfo{
+.exerciseInfo {
     color: black;
     position: absolute;
     width: 500px;
@@ -402,7 +402,7 @@ button:hover {
     color: black;
 }
 
-#login-ellipse{
+#login-ellipse {
     left: -175px;
     top: -190px;
     width: 850px;
