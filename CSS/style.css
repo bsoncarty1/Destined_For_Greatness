@@ -109,8 +109,8 @@ body {
     position: fixed;
     width: 650px;
     height: 750px;
-    left: 825px;
-    top: 280px;
+    left: 830px;
+    top: 240px;
 }
 
 /*****************************************BREEDS PAGE*******************************************************/
@@ -120,7 +120,7 @@ body {
     width: 600px;
     height: auto;
     left: 580px;
-    top: 550px;
+    top: 500px;
 }
 
 #breedsEllipse {
