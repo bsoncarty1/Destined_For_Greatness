@@ -74,7 +74,7 @@ body {
 
 .ellipse {
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
     width: 783px;
     height: 728px;
     left: 785px;
@@ -96,7 +96,7 @@ body {
 }
 
 #prints {
-    position: absolute;
+    position: fixed;
     width: 691px;
     height: 720px;
     left: 830px;
@@ -244,14 +244,14 @@ select {
     position: fixed;
     height: 550px;
     width: auto;
-    left: 750px;
+    left: 760px;
     top: 480px;
 }
 
 .ExerciseTips {
     color: black;
     left: 980px;
-    top: 410px;
+    top: 400px;
     position: fixed;
     font-size: 30px;
 }
