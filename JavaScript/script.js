@@ -10,7 +10,7 @@ form.addEventListener("submit", function (event){
 
     switch (breed) {
         case 'labrador':
-            str += "The dog is a Labrador";
+            str += "Your dog is a Labrador";
             switch (weight) {
                 case 'small':
                     str += ", it is small,";
@@ -26,7 +26,7 @@ form.addEventListener("submit", function (event){
             }
             break;
         case 'french_bulldog':
-            str += "The dog is a French Bulldog";
+            str += "Your dog is a French Bulldog";
             switch (weight) {
                 case 'small':
                     str += ", it is small,";
@@ -42,7 +42,7 @@ form.addEventListener("submit", function (event){
             }
             break;
         case 'border_collie':
-            str += "The dog is a Border Collie";
+            str += "Your dog is a Border Collie";
             switch (weight) {
                 case 'small':
                     str += ", it is small,";
@@ -58,7 +58,7 @@ form.addEventListener("submit", function (event){
             }
             break;
         case 'golden_retriever':
-            str += "The dog is a Golden Retriever";
+            str += "Your dog is a Golden Retriever";
             switch (weight) {
                 case 'small':
                     str += ", it is small,";
@@ -98,5 +98,10 @@ form.addEventListener("submit", function (event){
             str += " and its age is unknown.";
             console.log(str);
     }
-    document.getElementById("form").innerHTML = str;
+    var words = document.getElementById("form");
+    words.innerHTML = str;
+    words.style.color ='black';
+    words.style.fontSize = "46px";
+
+
 })
