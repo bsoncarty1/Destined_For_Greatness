@@ -6,69 +6,71 @@ form.addEventListener("submit", function (event){
     var weight = document.getElementById("dogWeight").value;
     var age = document.getElementById("dogAge").value;
 
+    let str = "";
+
     switch (breed) {
         case 'labrador':
-            console.log("The dog is a Labrador");
+            str += "The dog is a Labrador";
             switch (weight) {
                 case 'small':
-                    console.log("and it is small");
+                    str += ", it is small,";
                     break;
                 case 'medium':
-                    console.log("and it is medium");
+                    str += ", it is medium,";
                     break;
                 case 'large':
-                    console.log("and it is large");
+                    str += ", it is large,";
                     break;
                 default:
-                    console.log("size not given.");
+                    str += ", the size was not given, ";
             }
             break;
         case 'french_bulldog':
-            console.log("The dog is a French Bulldog");
+            str += "The dog is a French Bulldog";
             switch (weight) {
                 case 'small':
-                    console.log("and it is small");
+                    str += ", it is small,";
                     break;
                 case 'medium':
-                    console.log("and it is medium");
+                    str += ", it is medium,";
                     break;
                 case 'large':
-                    console.log("and it is large");
+                    str += ", it is large,";
                     break;
                 default:
-                    console.log("size not given.");
+                    str += ", the size was not given, ";
             }
             break;
         case 'border_collie':
-            console.log("The dog is a Border Collie");
+            str += "The dog is a Border Collie";
             switch (weight) {
                 case 'small':
-                    console.log("and it is small");
+                    str += ", it is small,";
                     break;
                 case 'medium':
-                    console.log("and it is medium");
+                    str += ", it is medium,";
                     break;
                 case 'large':
-                    console.log("and it is large");
+                    str += ", it is large,";
                     break;
                 default:
-                    console.log("size not given.");
+                    str += ", the size was not given, ";
             }
             break;
         case 'golden_retriever':
-            console.log("The dog is a Golden Retriever");
+            str += "The dog is a Golden Retriever";
             switch (weight) {
                 case 'small':
-                    console.log("and it is small");
+                    str += ", it is small,";
                     break;
                 case 'medium':
-                    console.log("and it is medium");
+                    str += ", it is medium,";
                     break;
                 case 'large':
-                    console.log("and it is large");
+                    str += ", it is large,";
                     break;
                 default:
-                    console.log("size not given.");
+                    str += ", the size was not given, ";
             }
             break;
         default:
@@ -77,19 +79,24 @@ form.addEventListener("submit", function (event){
 
     switch (age) {
         case 'puppy':
-            console.log("and it is a puppy.");
+            str += " and it is a puppy." ;
+            console.log(str);
             break;
         case 'young_adult':
-            console.log("and it is a young adult.");
+            str += " and it is a young adult.";
+            console.log(str);
             break;
         case 'adult':
-            console.log("and it is an adult.");
+            str += " and it is an adult.";
+            console.log(str);
             break;
         case 'senior':
-            console.log("and it is a senior.");
+            str += " and it is a senior.";
+            console.log(str);
             break;
         default:
-            console.log("age is unknown.")
+            str += " and its age is unknown.";
+            console.log(str);
     }
-
+    document.getElementById("form").innerHTML = str;
 })
