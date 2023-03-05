@@ -2,16 +2,18 @@
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'registration');
 
-// check if the create account form has been submitted
-if (isset($_POST['create_account'])) {
+// check if the form has been submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // get the form data
-    $username = mysqli_real_escape_string($db, $_POST['username']);
-    $email = mysqli_real_escape_string($db, $_POST['email']);
-    $password = mysqli_real_escape_string($db, $_POST['password']);
+    $username = mysqli_real_escape_string($db, $_POST['uname']);
+    $password = mysqli_real_escape_string($db, $_POST['psw']);
 
-    // create a new user in the database
-    $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+    // insert the new user into the database
+    $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
     mysqli_query($db, $query);
+
+    // redirect the user to the login page
+    header('Location: Login.html');
+    exit();
 }
-
-
+?>
