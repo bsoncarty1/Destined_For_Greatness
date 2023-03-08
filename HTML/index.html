@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// check if the user is logged in
+if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+} else {
+    $username = '';
+}
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -22,6 +32,9 @@
             <li><a href="Grooming.html">Grooming</a></li>
             <li><a href="Exercise.html">Exercise</a></li>
             <li><a href="About.html">About</a></li>
+            <?php if (isset($_SESSION['username'])): ?>
+            <li><a href="#" id="username">Welcome, <?php echo $username; ?></a></li>
+            <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         </ul>
     </nav>

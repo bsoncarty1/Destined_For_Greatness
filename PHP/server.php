@@ -12,6 +12,9 @@ if (isset($_POST['create_account'])) {
     $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
     mysqli_query($db, $query);
 
+    // set the session variable for the user
+    $_SESSION['username'] = $username;
+
     // redirect the user to the index page
     header('Location: ../HTML/index.html');
     exit();
