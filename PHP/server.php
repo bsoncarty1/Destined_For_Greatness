@@ -13,7 +13,7 @@ if (isset($_POST['create_account'])) {
     mysqli_query($db, $query);
 
     // redirect the user to the index page
-    header('Location: index.html');
+    header('Location: ../HTML/index.html');
     exit();
 }
 
@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($db, $query);
     if (mysqli_num_rows($result) == 1) {
         // redirect the user to the index page
-        header('Location: index.html');
+        header('Location: ../HTML/index.html');
         exit();
     } else {
         // display an error message
