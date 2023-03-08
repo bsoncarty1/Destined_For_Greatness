@@ -31,8 +31,9 @@ if (isset($_POST['login'])) {
         header('Location: ../HTML/index.html');
         exit();
     } else {
-        // display an error message
-        echo "Invalid username or password.";
+        // display an error message using javascript alert
+        echo "<script>alert('Invalid username or password.'); window.location.href='../HTML/login.html';</script>";
+        exit();
     }
 }
 ?>
