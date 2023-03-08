@@ -63,3 +63,7 @@ The second if statement checks if the user has clicked the logout button. If yes
 uniform to the rest of the site.
 -Brandon also started writing javascript that works with the dropdown menus in the Breeds page so that the site can
 display information based on what the user selects.
+
+3/7/2023
+-database connection established
+-login/create account/ logout implemented
