@@ -1,1 +1,1 @@
-Bugs to fix:
+Bugs to fix: username misaligned
