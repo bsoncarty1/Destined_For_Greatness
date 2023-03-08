@@ -1,4 +1,5 @@
 <?php
+session_start();
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'registration');
 
@@ -16,7 +17,7 @@ if (isset($_POST['create_account'])) {
     $_SESSION['username'] = $username;
 
     // redirect the user to the index page
-    header('Location: ../HTML/index.html');
+    header('Location: ../HTML/index.php');
     exit();
 }
 
@@ -30,12 +31,14 @@ if (isset($_POST['login'])) {
     $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
     $result = mysqli_query($db, $query);
     if (mysqli_num_rows($result) == 1) {
+        // set the session variable for the user
+        $_SESSION['username'] = $username;
         // redirect the user to the index page
-        header('Location: ../HTML/index.html');
+        header('Location: ../HTML/index.php');
         exit();
     } else {
         // display an error message using javascript alert
-        echo "<script>alert('Invalid username or password.'); window.location.href='../HTML/login.html';</script>";
+        echo "<script>alert('Invalid username or password.'); window.location.href='../HTML/Login.html';</script>";
         exit();
     }
 }
