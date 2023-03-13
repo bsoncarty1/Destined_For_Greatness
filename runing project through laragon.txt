@@ -4,7 +4,8 @@ https://laragon.org/
 3. click start all
 4. click databse, open Laragon.MySQL, under file click laod sql file, choose "registrationDB" found in D4G folder.
 5. file encoding is ok
-5. execute sql
+5. execute sql (you have to run it)
 6. click web to run local host
 7. click HTML/
-8. Enjoy!
+8. Now all acount info will be stored in the DB
+9. Enjoy!
