@@ -33,13 +33,17 @@ if (isset($_SESSION['username'])) {
         <li><a href="Exercise.html">Exercise</a></li>
         <li><a href="About.html">About</a></li>
         <?php if (isset($_SESSION['username'])): ?>
-            <li><a href="#" id="username">Welcome, <?php echo $username; ?></a></li>
+            <li><a href="#" id="username1">Welcome, <?php echo $username; ?></a></li>
             <li><a href="../PHP/logout.php" id="logout">Logout</a></li>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>
     </ul>
 </nav>
+
+<div>
+
+</div>
 
 <div class="ellipse"></div>
 <div class="pawprints">

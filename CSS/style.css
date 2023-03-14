@@ -31,7 +31,7 @@ ul {
 }
 
 #Nav li {
-    width: 500px;
+    width: 750px;
     margin-left: 50px;
 }
 
@@ -111,6 +111,16 @@ body {
     height: 750px;
     left: 830px;
     top: 240px;
+}
+
+#username1 {
+    position: absolute;
+    left: 500px;
+}
+
+#logout {
+    position: relative;
+    left: 1000px;
 }
 
 /*****************************************BREEDS PAGE*******************************************************/
