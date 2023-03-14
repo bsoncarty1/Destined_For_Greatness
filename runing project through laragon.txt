@@ -1,11 +1,11 @@
 1. Download laragon full version
 https://laragon.org/
-2. right click root, wwww, Switch Document Root and select the github repository.
+2. right click root, wwww, Switch Document Root and select the github repo. 
 3. click start all
-4. click database, open Laragon.MySQL, under file click load sql file, choose "DB.sql" found in D4G folder.
+4. click databse, open Laragon.MySQL, under file click laod sql file, choose "DB" found in D4G folder.
 5. file encoding is ok
 5. execute sql (you have to run it)
 6. click web to run local host
 7. click HTML/
-8. Now all account info will be stored in the DB
+8. Now all acount info will be stored in the DB
 9. Enjoy!
