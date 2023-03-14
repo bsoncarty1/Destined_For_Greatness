@@ -1,6 +1,6 @@
 1. Download laragon full version
 https://laragon.org/
-2. right click root, wwww, Switch Document Root and select the github repository.
+2. right click root, www, Switch Document Root and select the github repository.
 3. click start all
 4. click database, open Laragon.MySQL, under file click load sql file, choose "DB" found in D4G folder.
 5. file encoding is ok
