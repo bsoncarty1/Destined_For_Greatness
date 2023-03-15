@@ -1,3 +1,17 @@
+<?php
+$db = mysqli_connect('localhost', 'root', '', 'registration');
+
+// check if the user is logged in
+if (isset($_SESSION['dog_breeds'])) {
+    $dog_breeds = $_SESSION['dog_breeds'];
+} else {
+    $query = "SELECT * FROM dogstats";
+    $dog_breeds = mysqli_query($db, $query);
+    $_SESSION['dog_breeds'] = $dog_breeds;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -8,6 +22,7 @@
 </head>
   <link href="../CSS/style.css" rel="stylesheet">
   <link href="../CSS/normalize.css" rel="stylesheet">
+
 <body>
 
   <div class="logo">
@@ -20,7 +35,7 @@
 
   <nav class="navigation-bar">
     <ul id="Nav">
-      <li><a href="Breeds.html">Breeds</a></li>
+      <li><a href="Breeds.php">Breeds</a></li>
       <li><a href="Grooming.html">Grooming</a></li>
       <li><a href="Exercise.html">Exercise</a></li>
       <li><a href="About.html">About</a></li>
@@ -31,31 +46,20 @@
     <div id="dogbreed">
       <label for="breedInfo">What breed is your dog?</label>
       <select name="breedInfo" id="breedInfo">
-        <option value="">--Please choose an option--</option>
-        <option value="labrador">Labrador</option>
-        <option value="french_bulldog">French Bulldog</option>
-        <option value="border_collie">Border Collie</option>
-        <option value="golden_retriever">Golden Retriever</option>
+        <?php foreach($dog_breeds as $row){ ?>
+        <option value="<?php echo $row['breed'] ?>"><?php echo $row['breed'] ?></option>
+        <?php  } ?>
       </select>
+
     </div>
     <div id="weight">
-      <label for="dogWeight">How much does your dog weigh?</label>
-      <select name="dogWeight" id="dogWeight">
-        <option value="">--Please choose an option--</option>
-        <option value="small">0-30 lbs</option>
-        <option value="medium">31-70 lbs</option>
-        <option value="large">71+ lbs</option>
-      </select>
+      <label for="dog_breedseight">How much does your dog weigh?</label>
+        <input id=dog_weight type="number" placeholder="Enter Weight" name="weight" required>
+  
     </div>
     <div id="age">
       <label for="dogAge">How old is your dog?</label>
-      <select name="dogAge" id="dogAge">
-        <option value="">--Please choose an option--</option>
-        <option value="puppy">0-1 year</option>
-        <option value="young_adult">1-5 years</option>
-        <option value="adult">5-8 years</option>
-        <option value="senior">8+ years</option>
-      </select>
+        <input id=dog_age type="number" placeholder="Enter Age" name="age" required>
     </div>
     <div>
       <input type="submit" id="submit-btn">
@@ -70,7 +74,7 @@
     <div class="breedDogs">
       <img id="groupOfDogs" src="../Images/DoggoScott.png" alt="picture of dog">
     </div>
+    <script src="../JavaScript/script.js"></script>
 
-  <script src="../JavaScript/script.js"></script>
 </body>
 </html>

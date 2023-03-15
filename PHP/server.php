@@ -42,4 +42,13 @@ if (isset($_POST['login'])) {
         exit();
     }
 }
+
+//this is a test but we dont use this currently and dont really need it as of now
+if (isset($_POST['pull_data'])) {
+    $query = "SELECT * FROM dogstats";
+    $dog_breeds = mysqli_query($db, $query);
+    $_SESSION['dog_breeds'] = $dog_breeds;
+    header('Location: ../HTML/Breeds.php');
+    exit();
+}
 ?>

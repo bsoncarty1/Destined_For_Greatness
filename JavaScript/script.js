@@ -3,8 +3,8 @@ form.addEventListener("submit", function (event){
     event.preventDefault();
 
     var breed = document.getElementById("breedInfo").value;
-    var weight = document.getElementById("dogWeight").value;
-    var age = document.getElementById("dogAge").value;
+    var weight = document.getElementById("dog_weight").value;
+    var age = document.getElementById("dog_age").value;
 
     let str = "";
 
