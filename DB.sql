@@ -19,17 +19,28 @@
 CREATE DATABASE IF NOT EXISTS `registration` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `registration`;
 
+-- Dumping structure for table registration.dogstats
+CREATE TABLE IF NOT EXISTS `dogstats` (
+  `breed` varchar(50) DEFAULT NULL,
+  `weight` double DEFAULT NULL,
+  `age` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- Dumping data for table registration.dogstats: ~0 rows (approximately)
+
 -- Dumping structure for table registration.users
 CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(100) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.users: ~3 rows (approximately)
+-- Dumping data for table registration.users: ~4 rows (approximately)
 REPLACE INTO `users` (`username`, `password`) VALUES
 	('Nick', '8e55b1d1a978111f02a0146b8a1e209b'),
 	('PuppyEnthusiest', 'this is a passwerod'),
-	('user', '123');
+	('user', '123'),
+	('newss', '111'),
+	('userrrr', 'seagreg');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
