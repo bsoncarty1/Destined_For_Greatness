@@ -26,7 +26,12 @@ CREATE TABLE IF NOT EXISTS `dogstats` (
   `age` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.dogstats: ~0 rows (approximately)
+-- Dumping data for table registration.dogstats: ~4 rows (approximately)
+REPLACE INTO `dogstats` (`breed`, `weight`, `age`) VALUES
+	('Labrador', 20, 5),
+	('French Bulldog', 30, 5),
+	('Border Collie', 40, 5),
+	('Golden Retriever', 50, 5);
 
 -- Dumping structure for table registration.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -34,19 +39,11 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.users: ~4 rows (approximately)
+-- Dumping data for table registration.users: ~3 rows (approximately)
 REPLACE INTO `users` (`username`, `password`) VALUES
 	('Nick', '8e55b1d1a978111f02a0146b8a1e209b'),
 	('PuppyEnthusiest', 'this is a passwerod'),
-	('user', '123'),
-	('newss', '111'),
-	('userrrr', 'seagreg');
-
-	REPLACE INTO `dogstats` (`breed`, `weight`, `age`) VALUES
-	 ('Labrador', 20,5),
-	 ('French Bulldog', 30,5),
-	 ('Border Collie', 40,5),
-	 ('Golden Retriever', 50,5);
+	('user', '123');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
