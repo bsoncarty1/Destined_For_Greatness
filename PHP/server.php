@@ -1,5 +1,4 @@
 <?php
-session_start();
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'registration');
 
@@ -15,7 +14,7 @@ if (isset($_POST['create_account'])) {
 
     // set the session variable for the user
     $_SESSION['username'] = $username;
-
+    setcookie('username', $username, time() + (86400 * 30), "/");
     // redirect the user to the index page
     header('Location: ../HTML/index.php');
     exit();
@@ -33,6 +32,7 @@ if (isset($_POST['login'])) {
     if (mysqli_num_rows($result) == 1) {
         // set the session variable for the user
         $_SESSION['username'] = $username;
+    setcookie('username', $username, time() + (86400 * 30), "/");
         // redirect the user to the index page
         header('Location: ../HTML/index.php');
         exit();
@@ -41,5 +41,14 @@ if (isset($_POST['login'])) {
         echo "<script>alert('Invalid username or password.'); window.location.href='../HTML/Login.html';</script>";
         exit();
     }
+}
+
+//this is a test but we dont use this currently and dont really need it as of now
+if (isset($_POST['pull_data'])) {
+    $query = "SELECT * FROM dogstats";
+    $dog_breeds = mysqli_query($db, $query);
+    $_SESSION['dog_breeds'] = $dog_breeds;
+    header('Location: ../HTML/Breeds.php');
+    exit();
 }
 ?>

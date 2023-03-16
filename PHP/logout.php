@@ -1,9 +1,10 @@
 <?php
 // start the session
-session_start();
+// session_start();
 
 // unset the username session variable
 unset($_SESSION['username']);
+setcookie("username", "", time() - 3600, "/");
 
 // destroy the session
 session_destroy();
