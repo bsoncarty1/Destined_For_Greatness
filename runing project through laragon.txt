@@ -8,4 +8,4 @@ https://laragon.org/
 6. click web to run local host
 7. click HTML-PHP
 8. Now all account info will be stored in the DB
-9. if you moddified the database, delete DB.sql in root and then export registration by rightclicking registration and clicking export database as sql. see screenshot on discord (notes-resrouces channel) for settings.
+9. if you modified the database, delete DB.sql in root and then export registration by rightclicking registration and clicking export database as sql. see screenshot on discord (notes-resrouces channel) for settings.
