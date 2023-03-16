@@ -10,7 +10,14 @@ if (isset($_POST['create_account'])) {
 
     // insert the new user into the database
     $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
-    mysqli_query($db, $query);
+    if (!mysqli_query($db, $query)) {
+        // log the error in errorLog.php
+        $error_message = mysqli_error($db);
+        $error_file = 'errorLog.php';
+        $error_log = fopen($error_file, 'a') or die('Unable to open file!');
+        fwrite($error_log, date('Y-m-d H:i:s') . ': ' . $error_message . "\n");
+        fclose($error_log);
+    }
 
     // set the session variable for the user
     $_SESSION['username'] = $username;
