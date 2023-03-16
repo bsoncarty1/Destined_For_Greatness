@@ -32,13 +32,14 @@ if (isset($_SESSION['username'])) {
         <li><a href="Grooming.php">Grooming</a></li>
         <li><a href="Exercise.php">Exercise</a></li>
         <li><a href="About.php">About</a></li>
-        <li><a href="admin.php">Admin</a></li>
         <?php if (isset($_COOKIE['username'])):   ?>     
             <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
             <li><a href="logout.php" id="logout">Logout</a></li>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>
+                <li><a href="admin.php">Admin</a></li>
+
     </ul>
 </nav>
 
