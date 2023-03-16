@@ -10,6 +10,25 @@ if (isset($_SESSION['dog_breeds'])) {
     $_SESSION['dog_breeds'] = $dog_breeds;
 }
 
+
+//get data from database make sure the sorts  
+//by coloms weight and breed  
+//store in cookie
+//js
+//getcookies 2 for wight and breesd
+//for loop to get index
+//use the data for math
+$list_weight =  array();
+$list_breed =  array();
+
+foreach ($dog_breeds as $key => $value) {
+  array_push($list_weight, $value['weight']);
+  array_push($list_breed, $value['breed']);
+}
+setcookie('weight', json_encode($list_weight), time() + (86400 * 30), "/");
+
+setcookie('breed', json_encode($list_breed), time() + (86400 * 30), "/");
+
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +55,15 @@ if (isset($_SESSION['dog_breeds'])) {
   <nav class="navigation-bar">
     <ul id="Nav">
       <li><a href="Breeds.php">Breeds</a></li>
-      <li><a href="Grooming.html">Grooming</a></li>
-      <li><a href="Exercise.html">Exercise</a></li>
-      <li><a href="About.html">About</a></li>
+      <li><a href="Grooming.php">Grooming</a></li>
+      <li><a href="Exercise.php">Exercise</a></li>
+      <li><a href="About.php">About</a></li>
+      <?php if (isset($_COOKIE['username'])):   ?>     
+            <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
+            <li><a href="../PHP/logout.php" id="logout">Logout</a></li>
+        <?php else: ?>
+            <li><a href="Login.html" id="login">Login</a></li>
+        <?php endif; ?>
     </ul>
   </nav>
 

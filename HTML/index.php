@@ -29,11 +29,11 @@ if (isset($_SESSION['username'])) {
 <nav class="navigation-bar">
     <ul id="Nav">
         <li><a href="Breeds.php">Breeds</a></li>
-        <li><a href="Grooming.html">Grooming</a></li>
-        <li><a href="Exercise.html">Exercise</a></li>
-        <li><a href="About.html">About</a></li>
-        <?php if (isset($_SESSION['username'])): ?>
-            <li><a href="#" id="username1">Welcome, <?php echo $username; ?></a></li>
+        <li><a href="Grooming.php">Grooming</a></li>
+        <li><a href="Exercise.php">Exercise</a></li>
+        <li><a href="About.php">About</a></li>
+        <?php if (isset($_COOKIE['username'])):   ?>     
+            <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
             <li><a href="../PHP/logout.php" id="logout">Logout</a></li>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>

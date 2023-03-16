@@ -1,5 +1,4 @@
 <?php
-session_start();
 // connect to the database
 $db = mysqli_connect('localhost', 'root', '', 'registration');
 
@@ -15,7 +14,7 @@ if (isset($_POST['create_account'])) {
 
     // set the session variable for the user
     $_SESSION['username'] = $username;
-
+    setcookie('username', $username, time() + (86400 * 30), "/");
     // redirect the user to the index page
     header('Location: ../HTML/index.php');
     exit();
@@ -33,6 +32,7 @@ if (isset($_POST['login'])) {
     if (mysqli_num_rows($result) == 1) {
         // set the session variable for the user
         $_SESSION['username'] = $username;
+    setcookie('username', $username, time() + (86400 * 30), "/");
         // redirect the user to the index page
         header('Location: ../HTML/index.php');
         exit();
