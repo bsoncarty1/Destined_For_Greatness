@@ -45,7 +45,7 @@ setcookie('breed', json_encode($list_breed), time() + (86400 * 30), "/");
 <body>
 
   <div class="logo">
-    <a href="../HTML/index.php"><img id="D4gLogo" src="../Images/logoD4g.png" alt="logo"></a>
+    <a href="../HTML-PHP/index.php"><img id="D4gLogo" src="../Images/logoD4g.png" alt="logo"></a>
   </div>
 
   <div class="Title">
@@ -60,7 +60,7 @@ setcookie('breed', json_encode($list_breed), time() + (86400 * 30), "/");
       <li><a href="About.php">About</a></li>
       <?php if (isset($_COOKIE['username'])):   ?>     
             <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
-            <li><a href="../PHP/logout.php" id="logout">Logout</a></li>
+            <li><a href="logout.php" id="logout">Logout</a></li>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>

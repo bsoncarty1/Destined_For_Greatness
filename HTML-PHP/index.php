@@ -34,7 +34,7 @@ if (isset($_SESSION['username'])) {
         <li><a href="About.php">About</a></li>
         <?php if (isset($_COOKIE['username'])):   ?>     
             <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
-            <li><a href="../PHP/logout.php" id="logout">Logout</a></li>
+            <li><a href="logout.php" id="logout">Logout</a></li>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>

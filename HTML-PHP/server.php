@@ -16,7 +16,7 @@ if (isset($_POST['create_account'])) {
     $_SESSION['username'] = $username;
     setcookie('username', $username, time() + (86400 * 30), "/");
     // redirect the user to the index page
-    header('Location: ../HTML/index.php');
+    header('Location: ../HTML-PHP/index.php');
     exit();
 }
 
@@ -34,11 +34,11 @@ if (isset($_POST['login'])) {
         $_SESSION['username'] = $username;
     setcookie('username', $username, time() + (86400 * 30), "/");
         // redirect the user to the index page
-        header('Location: ../HTML/index.php');
+        header('Location: ../HTML-PHP/index.php');
         exit();
     } else {
         // display an error message using javascript alert
-        echo "<script>alert('Invalid username or password.'); window.location.href='../HTML/Login.html';</script>";
+        echo "<script>alert('Invalid username or password.'); window.location.href='Login.html';</script>";
         exit();
     }
 }
@@ -48,7 +48,7 @@ if (isset($_POST['pull_data'])) {
     $query = "SELECT * FROM dogstats";
     $dog_breeds = mysqli_query($db, $query);
     $_SESSION['dog_breeds'] = $dog_breeds;
-    header('Location: ../HTML/Breeds.php');
+    header('Location: ../HTML-PHP/Breeds.php');
     exit();
 }
 ?>

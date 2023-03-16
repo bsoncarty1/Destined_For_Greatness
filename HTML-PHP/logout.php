@@ -10,6 +10,6 @@ setcookie("username", "", time() - 3600, "/");
 session_destroy();
 
 // redirect the user to the index page
-header('Location: ../HTML/Login.html');
+header('Location: ../HTML-PHP/Login.html');
 exit();
 ?>
