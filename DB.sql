@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `dogstats` (
   `age` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.dogstats: ~4 rows (approximately)
+-- Dumping data for table registration.dogstats: ~0 rows (approximately)
 REPLACE INTO `dogstats` (`breed`, `weight`, `age`) VALUES
 	('Labrador', 20, 5),
 	('French Bulldog', 30, 5),
@@ -36,14 +36,19 @@ REPLACE INTO `dogstats` (`breed`, `weight`, `age`) VALUES
 -- Dumping structure for table registration.users
 CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(100) DEFAULT NULL,
-  `password` varchar(100) DEFAULT NULL
+  `password` varchar(100) DEFAULT NULL,
+  `admin` enum('Y','N') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'N'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.users: ~3 rows (approximately)
-REPLACE INTO `users` (`username`, `password`) VALUES
-	('Nick', '8e55b1d1a978111f02a0146b8a1e209b'),
-	('PuppyEnthusiest', 'this is a passwerod'),
-	('user', '123');
+-- Dumping data for table registration.users: ~7 rows (approximately)
+REPLACE INTO `users` (`username`, `password`, `admin`) VALUES
+	('PuppyEnthusiest', 'this is a passwerod', 'N'),
+	('user', '123', 'N'),
+	('NickB', '123', 'Y'),
+	('BrandonS', 'password1', 'Y'),
+	('CasonN', 'Pa$$word2!', 'Y'),
+	('HannahK', 'SuperSecretPassword123!', 'Y'),
+	('DillP', 'Pass1', 'Y');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
