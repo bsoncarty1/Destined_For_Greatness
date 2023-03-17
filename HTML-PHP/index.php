@@ -4,6 +4,7 @@ session_start();
 // check if the user is logged in
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
+    
 } else {
     $username = '';
 }
