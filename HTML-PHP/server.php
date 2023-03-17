@@ -19,52 +19,45 @@ if (isset($_POST['create_account'])) {
         fclose($error_log);
     }
 
-    // fetch the user's admin status from the database
-    $query = "SELECT admin FROM users WHERE username='$username'";
-    $result = mysqli_query($db, $query);
-    $row = mysqli_fetch_assoc($result);
-    $admin = $row['admin'] == 'Y';
-
-
     // set the session variable for the user
-    $_SESSION['username'] = $username;
-    $_SESSION['admin'] = $admin;
+       $_SESSION['username'] = $username;
+       $u_admin = json_encode(mysqli_fetch_array($result, MYSQLI_NUM)[2]); 
+        $_SESSION['admin'] = $u_admin;
 
     setcookie('username', $username, time() + (86400 * 30), "/");
-    setcookie('admin', $admin, time() + (86400 * 30), "/");
+    setcookie('admin', $u_admin, time() + (86400 * 30), "/");
 
     // redirect the user to the index page
     header('Location: ../HTML-PHP/index.php');
     exit();
 }
 
-// get the form data
-$username = mysqli_real_escape_string($db, $_POST['uname']);
-$password = mysqli_real_escape_string($db, $_POST['psw']);
+// check if the login form has been submitted
+if (isset($_POST['login'])) {
+    // get the form data
+    $username = mysqli_real_escape_string($db, $_POST['uname']);
+    $password = mysqli_real_escape_string($db, $_POST['psw']);
 
-// check if the username and password are correct
-$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-$result = mysqli_query($db, $query);
-if (mysqli_num_rows($result) == 1) {
-    // fetch the user's admin status from the database
-    $row = mysqli_fetch_assoc($result);
-    $admin = $row['admin'] == 'Y';
-
-    // check if the user has an admin cookie set
-    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'Y') {
-        $admin = true;
-    }
-
-    // set the session variable for the user
-    $_SESSION['username'] = $username;
-    $_SESSION['admin'] = $admin;
+    // check if the username and password are correct
+    $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($db, $query);
+    if (mysqli_num_rows($result) == 1) {
+        // set the session variable for the user
+        $_SESSION['username'] = $username;
+        $u_admin = json_encode(mysqli_fetch_array($result, MYSQLI_NUM)[2]); 
+        $_SESSION['admin'] = $u_admin;
 
     setcookie('username', $username, time() + (86400 * 30), "/");
-    setcookie('admin', $admin, time() + (86400 * 30), "/");
+    setcookie('admin', $u_admin, time() + (86400 * 30), "/");
 
-    // redirect the user to the index page
-    header('Location: ../HTML-PHP/index.php');
-    exit();
+        // redirect the user to the index page
+        header('Location: ../HTML-PHP/index.php');
+        exit();
+    } else {
+        // display an error message using javascript alert
+        echo "<script>alert('Invalid username or password.'); window.location.href='Login.html';</script>";
+        exit();
+    }
 }
 
 //this is a test but we dont use this currently and dont really need it as of now

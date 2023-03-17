@@ -4,15 +4,8 @@ session_start();
 // check if the user is logged in
 if (isset($_SESSION['username'])) {
     $username = $_SESSION['username'];
-    // check if the user has an admin cookie set
-    if (isset($_COOKIE['admin']) && $_COOKIE['admin'] == 'Y') {
-        $admin = true;
-    } else {
-        $admin = false;
-    }
 } else {
     $username = '';
-    $admin = false;
 }
 ?>
 <!DOCTYPE html>
@@ -39,15 +32,13 @@ if (isset($_SESSION['username'])) {
         <li><a href="Grooming.php">Grooming</a></li>
         <li><a href="Exercise.php">Exercise</a></li>
         <li><a href="About.php">About</a></li>
-        <?php if (isset($_COOKIE['username'])):   ?>
+        <?php if (isset($_COOKIE['username'])):   ?>     
             <li><a href="#" id="username1">Welcome, <?php echo $_COOKIE['username']; ?></a></li>
             <li><a href="logout.php" id="logout">Logout</a></li>
-            <?php if ($admin): ?>
-                <li><a href="admin.php">Admin</a></li>
-            <?php endif; ?>
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>
+                <li><a href="admin.php">Admin</a></li>
 
     </ul>
 </nav>
