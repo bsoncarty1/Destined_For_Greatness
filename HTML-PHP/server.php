@@ -21,14 +21,20 @@ if (isset($_POST['create_account'])) {
 
     // set the session variable for the user
        $_SESSION['username'] = $username;
-       $u_admin = json_encode(mysqli_fetch_array($result, MYSQLI_NUM)[2]); 
-        $_SESSION['admin'] = $u_admin;
+       setcookie('username', $username, time() + (86400 * 30), "/");
 
-    setcookie('username', $username, time() + (86400 * 30), "/");
-    setcookie('admin', $u_admin, time() + (86400 * 30), "/");
+
+        //-------doesnt work but could if we had a function for adding new users---------
+       
+    //     $u_admin = json_encode(mysqli_fetch_array($result, MYSQLI_NUM)[2]); 
+    // $_SESSION['admin'] = $u_admin;
+    // setcookie('admin', $u_admin, time() + (86400 * 30), "/");
 
     // redirect the user to the index page
     header('Location: ../HTML-PHP/index.php');
+
+    
+
     exit();
 }
 
