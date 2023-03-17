@@ -39,6 +39,7 @@ if (isset($_SESSION['username'])) {
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>
+
     </ul>
 </nav>
 

@@ -26,7 +26,6 @@ CREATE TABLE IF NOT EXISTS `dogstats` (
   `age(avg)` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
 -- Dumping data for table registration.dogstats: ~4 rows (approximately)
 REPLACE INTO `dogstats` (`breed`, `weight(avg)`, `age(avg)`) VALUES
 	('Labrador', 65, 11),
@@ -38,7 +37,7 @@ REPLACE INTO `dogstats` (`breed`, `weight(avg)`, `age(avg)`) VALUES
 CREATE TABLE IF NOT EXISTS `users` (
   `username` varchar(100) DEFAULT NULL,
   `password` varchar(100) DEFAULT NULL,
-  `admin` enum('Y','N') CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'N'
+  `admin` varchar(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'N'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Dumping data for table registration.users: ~7 rows (approximately)
