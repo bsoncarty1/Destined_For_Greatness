@@ -26,6 +26,7 @@ form.addEventListener("submit", function (event){
 
     let weight = JSON.parse(getCookie('weight'));
     let breed = JSON.parse(getCookie('breed'));
+   let age = JSON.parse(getCookie('age'));
 
     
     var index;
@@ -37,14 +38,24 @@ form.addEventListener("submit", function (event){
   }
 
 let str = "Your dog is a " + u_breed;
-console.log(parseInt(weight[index]), '>', parseInt(u_weight));
+// console.log(parseInt(weight[index]), '>', parseInt(u_weight));
   if (parseInt(weight[index]) > parseInt(u_weight) ){
-        str += ", it is small,";
+        str += ", it is under average weight,";
   } else {
-    str += ", it is large,";
+    str += ", it is above average weight,";
   }
 
-  str += "and it age is " + u_age;
+str += " and "
+
+var age_left = parseInt(age) - parseInt(u_age);
+// console.log(parseInt(age[index]), '>', parseInt(u_age));
+  if (parseInt(age[index]) > parseInt(u_age) ){
+        str += "it is still in its early years. About " +age_left+ " years left, ";
+  } else {
+    str += "it is in its later years of life, chairish these last years with your dog, ";
+  }
+
+  str += "and it age is " + u_age + " years old.";
 
     // let str = "";
 

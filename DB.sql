@@ -22,16 +22,17 @@ USE `registration`;
 -- Dumping structure for table registration.dogstats
 CREATE TABLE IF NOT EXISTS `dogstats` (
   `breed` varchar(50) DEFAULT NULL,
-  `weight` double DEFAULT NULL,
-  `age` int DEFAULT NULL
+  `weight(avg)` double DEFAULT NULL,
+  `age(avg)` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table registration.dogstats: ~0 rows (approximately)
-REPLACE INTO `dogstats` (`breed`, `weight`, `age`) VALUES
-	('Labrador', 20, 5),
-	('French Bulldog', 30, 5),
-	('Border Collie', 40, 5),
-	('Golden Retriever', 50, 5);
+
+-- Dumping data for table registration.dogstats: ~4 rows (approximately)
+REPLACE INTO `dogstats` (`breed`, `weight(avg)`, `age(avg)`) VALUES
+	('Labrador', 65, 11),
+	('French Bulldog', 20, 12),
+	('Border Collie', 35, 13),
+	('Golden Retriever', 67, 11);
 
 -- Dumping structure for table registration.users
 CREATE TABLE IF NOT EXISTS `users` (
