@@ -30,12 +30,19 @@
     <button type="submit" name="login">Login</button>
   </div>
   <div id="forgot">
-    <span class="psw">Forgot <a href="#">password?</a></span>
+    <span class="psw"><a href="#" onclick="displayErrorMessage()">Forgot password?</a></span>
   </div>
   <div id="newaccount">
     <button type="submit" name="create_account">Create Account</button>
   </div>
   <div class="ellipse" id="login-ellipse"></div>
 </form>
+<script>
+  function displayErrorMessage() {
+    alert("A request ticket has been sent to the developers!" +
+            " Not really but the placebo effect should kick in soon.");
+
+  }
+</script>
 </body>
 </html>
