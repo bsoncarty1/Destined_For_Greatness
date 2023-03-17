@@ -39,7 +39,6 @@ if (isset($_SESSION['username'])) {
         <?php else: ?>
             <li><a href="Login.html" id="login">Login</a></li>
         <?php endif; ?>
-                <li><a href="admin.php">Admin</a></li>
 
     </ul>
 </nav>
