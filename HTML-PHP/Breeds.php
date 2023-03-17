@@ -20,14 +20,19 @@ if (isset($_SESSION['dog_breeds'])) {
 //use the data for math
 $list_weight =  array();
 $list_breed =  array();
+$list_age =  array();
 
 foreach ($dog_breeds as $key => $value) {
-  array_push($list_weight, $value['weight']);
+  array_push($list_weight, $value['weight(avg)']);
   array_push($list_breed, $value['breed']);
+    array_push($list_age, $value['age(avg)']);
+
 }
 setcookie('weight', json_encode($list_weight), time() + (86400 * 30), "/");
 
 setcookie('breed', json_encode($list_breed), time() + (86400 * 30), "/");
+
+setcookie('age', json_encode($list_age), time() + (86400 * 30), "/");
 
 ?>
 
